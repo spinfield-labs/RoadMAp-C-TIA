@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roadmap da Comissão de Tecnologia e Inteligência Artificial da OAB Colatina, com planejamento anual e iniciativas locais.">
+  <meta name="keywords" content="OAB Colatina, Tecnologia, Inteligência Artificial, Advocacia, Roadmap">
+  <meta name="author" content="Comissão de Tecnologia e IA - OAB Colatina">
+  <title>Roadmap - Comissão de Tecnologia e IA | OAB Colatina</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* Variáveis CSS */
+    :root {
+      --primary-color: #002b45;
+      --secondary-color: #1a4b8b;
+      --accent-color: #e6e6e6;
+      --text-color: #333;
+      --white: #fff;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --border-radius: 8px;
+    }
+
+    /* Reset e Estilos Gerais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--white);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Navegação */
+    nav {
+      background: var(--accent-color);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      gap: 0.5rem;
+    }
+
+    nav button {
+      flex: 1;
+      min-width: 120px;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      background: var(--white);
+      border: 1px solid var(--secondary-color);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav button:hover,
+    nav button.active {
+      background: var(--secondary-color);
+      color: var(--white);
+    }
+
+    nav button:focus {
+      outline: 2px solid var(--secondary-color);
+      outline-offset: 2px;
+    }
+
+    /* Conteúdo Principal */
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      display: none;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    section h2 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section p,
+    section ul {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    section ul li {
+      margin-bottom: 1rem;
+    }
+
+    section a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      nav button {
+        width: 100%;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      section p,
+      section ul {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Comissão de Tecnologia e Inteligência Artificial<br>1ª Subseção da OAB Colatina</h1>
+  </header>
+
+  <nav>
+    <ul role="tablist">
+      <li><button role="tab" aria-controls="mes1" onclick="show('mes1')" class="active">Mês 1</button></li>
+      <li><button role="tab" aria-controls="mes2" onclick="show('mes2')">Mês 2</button></li>
+      <li><button role="tab" aria-controls="mes3" onclick="show('mes3')">Mês 3</button></li>
+      <li><button role="tab" aria-controls="mes4" onclick="show('mes4')">Mês 4</button></li>
+      <li><button role="tab" aria-controls="mes5" onclick="show('mes5')">Mês 5</button></li>
+      <li><button role="tab" aria-controls="mes6" onclick="show('mes6')">Mês 6</button></li>
+      <li><button role="tab" aria-controls="mes7" onclick="show('mes7')">Mês 7</button></li>
+      <li><button role="tab" aria-controls="mes8" onclick="show('mes8')">Mês 8</button></li>
+      <li><button role="tab" aria-controls="mes9" onclick="show('mes9')">Mês 9</button></li>
+      <li><button role="tab" aria-controls="mes10" onclick="show('mes10')">Mês 10</button></li>
+      <li><button role="tab" aria-controls="mes11" onclick="show('mes11')">Mês 11</button></li>
+      <li><button role="tab" aria-controls="mes12" onclick="show('mes12')">Mês 12</button></li>
+      <li><button role="tab" aria-controls="cronograma" onclick="show('cronograma')">Cronograma</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="mes1" class="active" role="tabpanel">
+      <h2>Mês 1</h2>
+      <p>Reunião inaugural com definição da missão, objetivos e composição plural (incluir ao menos dois membros com pouca familiaridade com tecnologia).<br>Alinhamento com a diretoria da subseção.<br>Elaboração de regimento interno simplificado.<br><b>Produto:</b> Roteiro e regulamento da comissão.</p>
+    </section>
+    <section id="mes2" role="tabpanel">
+      <h2>Mês 2</h2>
+      <p>Levantamento de temas críticos (LGPD, Marco Civil da Internet, IA na prática).<br>Apresentação e articulação com outras comissões da subseção.<br>Integração com o ecossistema local (Pulsare, Inova Colatina, SECTI, Findeslab).<br><b>Produto:</b> Relatório de prioridades temáticas e mapeamento de parceiros.</p>
+    </section>
+    <section id="mes3" role="tabpanel">
+      <h2>Mês 3</h2>
+      <p>Realização de evento de abertura sobre “IA e Advocacia”.<br>Criação de canais oficiais de comunicação.<br><b>Produto:</b> Evento inaugural + lançamento de boletim informativo.</p>
+    </section>
+    <section id="mes4" role="tabpanel">
+      <h2>Mês 4</h2>
+      <p>Grupos quinzenais sobre legislação, ética, ferramentas jurídicas e IA.<br>Avaliação da infraestrutura tecnológica da subseção.<br><b>Produto:</b> Documento de diagnóstico + cronograma dos grupos.</p>
+    </section>
+    <section id="mes5" role="tabpanel">
+      <h2>Mês 5</h2>
+      <p>Elaboração de plano de modernização de infraestrutura e capacitação.<br>Apresentação das demandas para a diretoria da subseção.<br><b>Produto:</b> Plano de melhoria com prioridades estruturais e educacionais.</p>
+    </section>
+    <section id="mes6" role="tabpanel">
+      <h2>Mês 6</h2>
+      <p>Realização de ao menos dois workshops com comissões temáticas.<br>Elaboração de cartilha jurídica sobre tecnologia e IA na advocacia.<br><b>Produto:</b> Cartilha publicada + workshops realizados.</p>
+    </section>
+    <section id="mes7" role="tabpanel">
+      <h2>Mês 7</h2>
+      <p>Reunião de revisão semestral.<br>Apuração de resultados e ajustes de planejamento.<br><b>Produto:</b> Relatório parcial de resultados e replanejamento.</p>
+    </section>
+    <section id="mes8" role="tabpanel">
+      <h2>Mês 8</h2>
+      <p>Cursos práticos sobre automação jurídica, jurimetria e cibersegurança.<br>Criação de rede de mentorias para advogados com menos familiaridade com IA.<br><b>Produto:</b> 2 capacitações + canal ativo de mentorias.</p>
+    </section>
+    <section id="mes9" role="tabpanel">
+      <h2>Mês 9</h2>
+      <p>Alianças com FindesLab, IFES, UniCB, SEBRAE/ES e Pulsare.<br>Benchmarking com outras subseções do ES e OABs de outros estados.<br><b>Produto:</b> Rede de colaboração e possíveis convênios formalizados.</p>
+    </section>
+    <section id="mes10" role="tabpanel">
+      <h2>Mês 10</h2>
+      <p>Produção de guia prático com recomendações de uso de IA na advocacia.<br>Evento de lançamento com convidados institucionais.<br><b>Produto:</b> Guia de Boas Práticas + evento de divulgação.</p>
+    </section>
+    <section id="mes11" role="tabpanel">
+      <h2>Mês 11</h2>
+      <p>Levantamento de impacto (infraestrutura, capacitação, participação).<br>Apresentação de resultados à diretoria da subseção.<br><b>Produto:</b> Relatório consolidado de resultados + plano de continuidade.</p>
+    </section>
+    <section id="mes12" role="tabpanel">
+      <h2>Mês 12</h2>
+      <p>Reunião final com balanço anual.<br>Planejamento do 2º ciclo anual da comissão.<br><b>Produto:</b> Relatório final de atividades + proposta de plano para o ano seguinte.</p>
+    </section>
+    <section id="cronograma" role="tabpanel">
+      <h2>Cronograma de Iniciativas Locais</h2>
+      <ul>
+        <li><b>Programa Gênesis – Inova Colatina:</b><br>
+          2ª Edição: inscrições até 16/05/2025 – <a href="https://inova.colatina.es.gov.br/programa-genesis-lancamento-da-2a-edicao/" target="_blank" rel="noopener">Lançamento</a><br>
+          Oficina Tira-Dúvidas em 22/04/2025 – <a href="https://www.sympla.com.br/programa-genesis-oficina-tira-duvidas-i__2897009" target="_blank" rel="noopener">Sympla</a><br>
+          Destaque no EPICO 2025 – <a href="https://pulsarecolatina.com.br/agenda/" target="_blank" rel="noopener">EPICO</a>
+        </li>
+        <li><b>Programa Sementes do Rio Doce:</b><br>
+          Oficina em 11/02/2025. Apoio de até R$100 mil – <a href="https://inova.colatina.es.gov.br/programa-sementes-100-mil-para-impulsionar-seu-negocio/" target="_blank" rel="noopener">Programa</a>, 
+          <a href="https://secti.es.gov.br/Media/Secti/2025/SEMENTES/Edital_de_Parceiros_Programa_Sementes_do_Rio_Doce.pdf" target="_blank" rel="noopener">Edital</a>
+        </li>
+        <li><b>Inovalab – Colatina:</b> Lançamento 18/01/2025 – <a href="https://findeslab.com.br/inovalab-colatina/" target="_blank" rel="noopener">Link</a></li>
+        <li><b>Colatina On:</b> Inclusão digital contínua – <a href="https://colatina.es.gov.br/eventos/" target="_blank" rel="noopener">Prefeitura</a></li>
+        <li><b>PCTI-ES:</b> Em desenvolvimento – <a href="https://www.es.gov.br/Noticia/estado-elabora-plano-estadual-de-ciencia-tecnologia-e-inovacao-pcti-es-para-apoiar-desenvolvimento-cientifico-sustentavel" target="_blank" rel="noopener">Notícia</a></li>
+        <li><b>ES+Inteligente:</b> Prestação de serviços públicos – <a href="https://secti.es.gov.br/es-mais-inteligente" target="_blank" rel="noopener">SECTI</a></li>
+        <li><b>Findeslab:</b> Evento 17/04/2025 + BiG2025 – <a href="https://findeslab.com.br/" target="_blank" rel="noopener">Findeslab</a>, <a href="https://findeslab.com.br/big2025/" target="_blank" rel="noopener">BiG2025</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Comissão de Tecnologia e Inteligência Artificial - OAB Colatina</p>
+  </footer>
+
+  <script>
+    function show(id) {
+      // Remove classe 'active' de todas as seções e botões
+      document.querySelectorAll('section').forEach(section => section.classList.remove('active'));
+      document.querySelectorAll('nav button').forEach(button => button.classList.remove('active'));
+
+      // Adiciona classe 'active' à seção e botão correspondentes
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`button[aria-controls="${id}"]`).classList.add('active');
+    }
+
+    // Ativa a primeira seção ao carregar a página
+    show('mes1');
+  </script>
+</body>
+</html>
